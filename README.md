@@ -9,35 +9,11 @@
 ```xml
 <LinearLayout ...>
 
-    <TextView
+    <vinos.mathjaxwebview.view.MathJaxWebView
+        android:id="@+id/webView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Formula one: from xml with MathJax"
-        android:textStyle="bold"/>
-
-    <io.github.kexanie.library.MathView
-        android:id="@+id/formula_one"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        auto:text="When \\(a \\ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\)
-        and they are $$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$"
-        auto:engine="MathJax"
-        >
-    </io.github.kexanie.library.MathView>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Formula two: from Java String with KaTeX"
-        android:textStyle="bold"/>
-
-    <io.github.kexanie.library.MathView
-        android:id="@+id/formula_two"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        auto:engine="KaTeX"
-        >
-    </io.github.kexanie.library.MathView>
+        android:layout_height="match_parent"
+         />
 
 </LinearLayout>
 
@@ -68,10 +44,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        formula_two = (MathView) findViewById(R.id.formula_two);
-        formula_two.setText(tex);
     }
 }
 ```
-
-
