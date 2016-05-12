@@ -1,6 +1,6 @@
 # MathJaxView
 
-<img src="screenshot/screenshot.png" width="250">
+<img src="screenshots/screen.png" width="250">
 
 ## Setup
 
