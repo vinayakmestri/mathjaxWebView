@@ -1,4 +1,4 @@
-# MathJaxView
+# MathJaxWebView
 
 <img src="screenshots/screen.png" width="250">
 
